@@ -3,7 +3,7 @@ import './App.css';
 import searchIcon from './Search.svg';
 import MovieCard from './MovieCard';
 
-const URL = `${process.env.REACT_APP_API_URL}${process.env.REACT_APP_API_KEY}&page=5`;
+const URL = `${process.env.REACT_APP_API_URL}${process.env.REACT_APP_API_KEY}`;
 
 function App() {
     const [movies, setMovies] = useState([]);

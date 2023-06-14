@@ -1,3 +1,7 @@
+CL-0.0.03: Bug fix.
+- Fixing API call parameter.
+
+
 CL-0.0.02: Making API call.
 - Updated reactDom render method as it was giving error in console due to v18 of react.
 - Added api call.
