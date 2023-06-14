@@ -1,3 +1,7 @@
+CL-0.0.04: Bug fix.
+- Fixed some file import error due to app.js name.
+- Created a footer component for later development purposes.
+
 CL-0.0.03: Bug fix.
 - Fixing API call parameter.
 

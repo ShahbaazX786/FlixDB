@@ -19,7 +19,6 @@ body {
 
 .app {
     padding: 4rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +36,11 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
+}
+
+.custom-h1{
+    text-align: center;
+    color: #a1a1a1;
 }
 
 .search {

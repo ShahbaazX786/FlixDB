@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import searchIcon from './Search.svg';
 import MovieCard from './MovieCard';
+import Footer from './Footer';
 
 const URL = `${process.env.REACT_APP_API_URL}${process.env.REACT_APP_API_KEY}`;
 
 function App() {
     const [movies, setMovies] = useState([]);
-    const [searchKeyWord, setSearchKeyWord] = useState();
+    const [searchKeyWord, setSearchKeyWord] = useState('');
 
     useEffect(() => {
-        searchMovies('spiderman');
+        searchMovies('avengers');
     }, []);
     
     const searchMovies = async (title) => {
@@ -30,6 +31,7 @@ function App() {
 
 
     return (
+        <>
         <div className='app'>
             <h1>FlixDB - The Movie Database</h1>
             <div className='search'>
@@ -47,6 +49,10 @@ function App() {
                 </div>
             )}
         </div>
+        <div className='app fixed'>
+            <Footer/>
+        </div>
+        </>
     );
 }
 
