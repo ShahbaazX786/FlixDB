@@ -17,9 +17,9 @@ function App() {
     const searchMovies = async (title) => {
         const response = await fetch(`${URL}&s=${title}`);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         const movieArray = data.Search;
-        console.log(movieArray);
+        // console.log(movieArray);
         setMovies(movieArray);
     }
 
